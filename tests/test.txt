@@ -1,0 +1,8 @@
+company:
+
+1. cat sitemap_2.xml | grep loc | wc
+     50000   50000 3000000
+2. cat sitemap_3.xml | grep loc | wc
+     50000   50000 3000000
+3. cat sitemap_4.xml | grep loc | wc
+     30   30 1800

@@ -1,0 +1,6 @@
+create table price(id bigint not null primary key auto_increment, content varchar(255), updated_at bigint);
+create table company(id bigint not null primary key auto_increment, content varchar(255), updated_at bigint);
+create table news(id bigint not null primary key auto_increment, content varchar(255), updated_at bigint);
+create table pub(id bigint not null primary key auto_increment, content varchar(255), updated_at bigint);
+create table country(id bigint not null primary key auto_increment, content varchar(255), updated_at bigint);
+create table staticpages(id bigint not null primary key auto_increment, content varchar(255), updated_at bigint);
