@@ -34,6 +34,6 @@ $sql = Mysql::getInstance();
 
 foreach($tables as $table) {
     $sql->insert("DELETE FROM {$table}");
-    for ($i = 0; $i < 100; $i++)
+    for ($i = 0; $i < 10000; $i++)
         $sql->insert("INSERT INTO {$table} SET content = '" . getRandomName() . "'");
 }

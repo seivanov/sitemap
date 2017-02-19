@@ -1,8 +1,12 @@
 <?php
 
+declare(ticks = 1);
+
 require_once('lib/mysql.php');
 require_once('lib/sections.php');
 require_once('lib/sfile.php');
+
+pcntl_signal(SIGINT, "signal_handler");
 
 /**
  * Class SitemapGenerator
@@ -224,3 +228,10 @@ $generator->build([
     ])
 
 ]);
+
+function signal_handler($signal) {
+    switch($signal) {
+        case SIGINT:
+            print "Ctrl C\n";
+    }
+}

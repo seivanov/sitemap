@@ -37,6 +37,9 @@ class Sfile {
 
         $this->filename = $name;
 
+        if(file_exists($this->filename))
+            unlink($this->filename);
+
     }
 
     /**
